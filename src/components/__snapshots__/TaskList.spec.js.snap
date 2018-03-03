@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TaskList component renders correctly 1`] = `
+<ul>
+  <li>
+    <Task
+      content="Do the dishes"
+      status="PENDING"
+    />
+  </li>
+  <li>
+    <Task
+      content="Use task app."
+      status="BLOCKED"
+    />
+  </li>
+  <li>
+    <Task
+      content="Start task app."
+      status="DONE"
+    />
+  </li>
+  <li>
+    <Task
+      content="Games Backlog App."
+      status="DROPPED"
+    />
+  </li>
+</ul>
+`;

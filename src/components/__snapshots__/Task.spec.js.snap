@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Task renders blocked task 1`] = `
+<div
+  className="BLOCKED"
+>
+  I will do this after that.
+</div>
+`;
+
+exports[`Task renders done task 1`] = `
+<div
+  className="DONE"
+>
+  I did this a while back.
+</div>
+`;
+
+exports[`Task renders dropped task 1`] = `
+<div>
+  I don't need to do this anymore.
+</div>
+`;
+
+exports[`Task renders pending task 1`] = `
+<div
+  className="PENDING"
+>
+  I should do this soon.
+</div>
+`;
