@@ -1,33 +1,45 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Task renders blocked task 1`] = `
-<div
-  className="BLOCKED"
->
+<label>
+  <input
+    checked={false}
+    onChange={[Function]}
+    type="checkbox"
+  />
   I will do this after that.
-</div>
+</label>
 `;
 
 exports[`Task renders done task 1`] = `
-<div
-  className="DONE"
->
+<label>
+  <input
+    checked={true}
+    onChange={[Function]}
+    type="checkbox"
+  />
   I did this a while back.
-</div>
+</label>
 `;
 
 exports[`Task renders dropped task 1`] = `
-<div
-  className="DROPPED"
->
+<label>
+  <input
+    checked={false}
+    onChange={[Function]}
+    type="checkbox"
+  />
   I don't need to do this anymore.
-</div>
+</label>
 `;
 
 exports[`Task renders pending task 1`] = `
-<div
-  className="PENDING"
->
+<label>
+  <input
+    checked={false}
+    onChange={[Function]}
+    type="checkbox"
+  />
   I should do this soon.
-</div>
+</label>
 `;

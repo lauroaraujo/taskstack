@@ -2,27 +2,39 @@
 
 exports[`TaskList component renders correctly 1`] = `
 <ul>
-  <li>
-    <Task
+  <li
+    key="t_1"
+  >
+    <Connect(Task)
       content="Do the dishes"
+      id={1}
       status="PENDING"
     />
   </li>
-  <li>
-    <Task
-      content="Use task app."
+  <li
+    key="t_2"
+  >
+    <Connect(Task)
+      content="Use task app"
+      id={2}
       status="BLOCKED"
     />
   </li>
-  <li>
-    <Task
-      content="Start task app."
+  <li
+    key="t_3"
+  >
+    <Connect(Task)
+      content="Start task app"
+      id={3}
       status="DONE"
     />
   </li>
-  <li>
-    <Task
-      content="Games Backlog App."
+  <li
+    key="t_4"
+  >
+    <Connect(Task)
+      content="Games Backlog App"
+      id={4}
       status="DROPPED"
     />
   </li>

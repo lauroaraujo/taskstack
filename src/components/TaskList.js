@@ -1,13 +1,25 @@
 import React from 'react';
-import Task, {TASK_STATUS} from './Task';
+import { connect } from 'react-redux';
+import Task from './Task';
 
-const TaskList = () => (
-    <ul>
-        <li><Task status={TASK_STATUS.PENDING} content='Do the dishes' /></li>
-        <li><Task status={TASK_STATUS.BLOCKED} content='Use task app.' /></li>
-        <li><Task status={TASK_STATUS.DONE} content='Start task app.' /></li>
-        <li><Task status={TASK_STATUS.DROPPED} content='Games Backlog App.' /></li>
+export const TaskList = ({ tasks }) => (
+  <ul>
+    { tasks.map((t) => renderTask(t)) }
   </ul>
 );
 
-export default TaskList;
+function renderTask(task) {
+  const {id, status, content} = task;
+  return (
+    <li key={`t_${id}`}>
+      <Task id={id} status={status} content={content} />
+    </li>);
+}
+
+function mapStateToProps({ taskList }) {
+  return {
+    tasks: taskList.tasks,
+  }
+}
+
+export default connect(mapStateToProps)(TaskList);
