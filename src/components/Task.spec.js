@@ -19,7 +19,7 @@ describe('Task', () => {
   });
 
   it('renders dropped task', () => {
-    const task = shallow(<Task statue={TASK_STATUS.DROPPED} content={'I don\'t need to do this anymore.'} />);
+    const task = shallow(<Task status={TASK_STATUS.DROPPED} content={'I don\'t need to do this anymore.'} />);
     expect(task).toMatchSnapshot();
   });
 });

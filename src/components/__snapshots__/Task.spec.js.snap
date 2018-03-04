@@ -17,7 +17,9 @@ exports[`Task renders done task 1`] = `
 `;
 
 exports[`Task renders dropped task 1`] = `
-<div>
+<div
+  className="DROPPED"
+>
   I don't need to do this anymore.
 </div>
 `;

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './Task.css';
+import styles from './Task.css';
 
 export const TASK_STATUS = {
   PENDING: 'PENDING',
@@ -12,7 +12,7 @@ export const TASK_STATUS = {
 export const TASK_STATUS_LIST = Object.keys(TASK_STATUS);
 
 const Task = ({ content, status }) => (
-  <div className={status}>
+  <div className={styles[status]}>
     {content}
   </div>
 );
